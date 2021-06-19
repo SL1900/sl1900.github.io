@@ -1,12 +1,28 @@
 body {
-  background: black;
+  margin: 0;
+  position: absolute;
+  inset: 0 !important;
+}
+#app {
+  position: absolute;
+  inset: 0 !important;
+  background: url(https://i.imgur.com/GsWuLO8.png);
+
+  background-clip: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#app::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.85);
   position: absolute;
-  inset: 0;
+  inset: 0 !important;
 }
 #hello {
+  position: relative;
   font-size: 10vh;
   text-align: center;
   color: white;
